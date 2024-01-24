@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AI对话TTS</string>
+    <string name="Button">开始对话</string>
+    <string name="Button_stop">结束对话</string>
+</resources>

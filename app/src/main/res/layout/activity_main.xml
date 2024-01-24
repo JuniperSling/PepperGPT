@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:id="@+id/recognized_text_view_scroll_view"
+        android:layout_width="750dp"
+        android:layout_height="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/robot_answer_scroll_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="1">
+
+        <TextView
+            android:id="@+id/recognized_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Recognized Text:"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </ScrollView>
+
+    <ScrollView
+        android:id="@+id/robot_answer_scroll_view"
+        android:layout_width="750dp"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_record"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recognized_text_view_scroll_view"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_weight="1">
+
+        <TextView
+            android:id="@+id/robot_answer_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:text="Robot Answer:"
+            android:textColor="@color/purple_700"
+            android:textSize="20sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/button_record"
+        android:layout_width="300dp"
+        android:layout_height="61dp"
+        android:text="@string/Button"
+        android:backgroundTint="@color/purple_500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/robot_answer_scroll_view"
+        app:layout_constraintVertical_bias="0.989" />
+</androidx.constraintlayout.widget.ConstraintLayout>

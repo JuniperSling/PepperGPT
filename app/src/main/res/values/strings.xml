@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ChatRobotTTS</string>
+    <string name="Button">Start Conversation</string>
+    <string name="Button_stop">Stop Conversation</string>
+</resources>

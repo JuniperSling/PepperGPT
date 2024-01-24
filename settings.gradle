@@ -1,0 +1,21 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        maven {
+            url 'http://android.aldebaran.com/sdk/maven'
+            allowInsecureProtocol = true
+        }
+        google()
+        mavenCentral()
+        jcenter()
+    }
+}
+rootProject.name = "speech_rec_TTS"
+include ':app'
